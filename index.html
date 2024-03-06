@@ -1,8 +1,41 @@
-<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Abacus Simulator</title>
+ 
+    <title>ADA Abacus Simulator</title>
+    <style>
+      body{
+        background-color: bisque;
+      }
+      .header{ 
+       height:150px;
+      display:inline-grid;
+      grid-template-columns: 1fr 1fr;
+      }
+      .div1{
+        width:150px;  
+      }
+      .div2{
+        width: 400px;
+        margin-left:30px;
+      }
+      
+      img{
+        width:150px;
+        height:150px;
+      }
+      #logo{
+        width:450px;
+        margin-top:50px;
+        color: rgb(159, 104, 9);
+      }
+      hr{
+        margin-left:20px; 
+      }
+      #myAbacus{
+        margin-top:10px
+      }
+    </style>
     <script src='./abacus.js'></script>
     <script type="text/javascript">
       function run() {
@@ -12,9 +45,18 @@
     </script>
   </head>
   <body onload="run();">
-    <h1 style="text-align: center;color:chocolate">Abacus Simulator</h1>
-    <div id="myAbacus"style="text-align: center;"> </div>
-<!--     <p> The JavaScript source code can be found here: <a href="./abacus.js">abacus.js</a>.</p>
-    <p> Keywords: abacus simulator, abacus simulation, virtual abacus, online abacus, interactive abacus, soroban, html5, javascript</p> -->
+    <div class="header">
+      <div class="div1">
+        <img src="./ada.png" alt="">
+      </div>
+      <div class="div2">
+        <h1 id="logo">Achievers Destination Academy</h1>
+        <hr>
+      </div>
+    </div>
+    <div id="myAbacus" style="text-align: center;"> </div>
+
+   
+   
   </body>
 </html>
