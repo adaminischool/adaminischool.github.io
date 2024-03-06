@@ -235,7 +235,7 @@ function Abacus(parentDivId, type) {
     }
     // draw frame
     ctx.strokeStyle = '#000000';
-    ctx.lineWidth = 5;
+    ctx.lineWidth = 15;
     for (var i = 0; i < abacusCtrl.beadLines; i++) {
       var x = -30 + abacusCtrl.beadLines * abacusCtrl.beadSpacing - i * abacusCtrl.beadSpacing;
       var y = 20 + (abacusCtrl.beadPerLine + 2) * abacusCtrl.beadHeight
