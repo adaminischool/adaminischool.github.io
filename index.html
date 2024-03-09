@@ -35,6 +35,18 @@
       #myAbacus{
         margin-top:10px
       }
+      .about{
+        text-align: center;
+        font-size: 20px;
+        font-style: italic;
+      }
+      #tools{
+        font-style: italic;
+      }
+      .intro{
+        text-align: center;
+      }
+
     </style>
     <script src='./abacus.js'></script>
     <script type="text/javascript">
@@ -42,20 +54,68 @@
         var abacus = new Abacus("myAbacus", 0);
         abacus.init();
       }
+  
     </script>
   </head>
   <body onload="run();">
     <div class="header">
+
       <div class="div1">
         <img src="./ada.png" alt="">
       </div>
+
       <div class="div2">
         <h1 id="logo">Achievers Destination Academy</h1>
         <hr>
       </div>
-    </div>
-    <div id="myAbacus" style="text-align: center;"> </div>
 
+    </div>
+
+  
+    <div class="About">
+      <p>"Unlock the full potential of 13 Road Abacus with our intuitive Virtual Tool, revolutionizing your calculations like never before."</p>
+  </div>
+
+  <br><br><br>
+    <div id="myAbacus" style="text-align: center;"> </div>
+  
+    <br><br><br>
+    
+
+    <div class="intro">
+      <p><span id="tools"><strong>Tools Components:</strong></span></p>
+      <br><br>
+      <p><strong>Beads</strong></p>
+      <br>
+      <p>Upper Beads (Heaven Beads): Located above the horizontal bar (beam), each upper bead represents a value of 5.</p>
+      <br>
+      <p>Lower Beads (Earth Beads): Located below the horizontal bar, each lower bead represents a value of 1.</p>
+      <br>
+      <p><strong>Columns:</strong></p>
+      <br>
+      <p>The abacus consists of several vertical columns, each representing a digit in a numerical value</p>
+      <br>
+      <p><strong>Horizontal Bar (Beam):</strong></p>
+      <br>
+      <p>This bar separates the upper and lower beads. It is used as a reference point for counting.</p>
+      <br>
+      <p><strong>Divider Line:</strong></p>
+      <br>
+      <p>A vertical line that separates the two sets of beads, helping in visual organization.</p>
+      <br>
+      <p><strong>Frame:</strong></p>
+      <br>
+      <p>The outer structure that holds the columns and allows for easy manipulation of beads.</p>
+      <br>
+      <p><strong>Carryover System:</strong></p>
+      <br>
+      <p>There may be a carryover system to handle carrying over values to the next column when a specific threshold is reached.</p>
+    </div>
    
   </body>
+  <script>
+        function fun(){  
+          document.getElementById('resetButton').addEventListener('click', body); 
+ } 
+  </script>
 </html>
